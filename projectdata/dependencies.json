@@ -10,6 +10,13 @@
             "--ohnet-include-dir", "${dest}${name}-${platform}-${titlecase-debugmode}/include/ohnet"
         ]
     },
+    {   "name": "ohNetGenerated",
+        "type": "openhome",
+        "platform-specific": true,
+        "version": "1.1.134",
+        "archive-filename": "${name}-${version}-${archive-platform}-${debugmode}.tar.gz",
+        "source-git": "https://github.com/openhome/ohNetGenerated.git"
+    },
     {
 	    "name": "ohWafHelpers",
         "type": "openhome",
