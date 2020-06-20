@@ -604,11 +604,11 @@ void CpTopology2::DeviceRemoved(CpDevice& aDevice)
 
 void CpTopology2::GroupAdded(CpTopology2Group& aGroup)
 {
-    LOG(kTrace, "CpTopology2::GroupAdded ");
-    LOG(kTrace, aGroup.Room());
-    LOG(kTrace, ":");
-    LOG(kTrace, aGroup.Name());
-    LOG(kTrace, "\n");
+    LOG(kSeverityTrace, "CpTopology2::GroupAdded ");
+    LOG(kSeverityTrace, aGroup.Room());
+    LOG(kSeverityTrace, ":");
+    LOG(kSeverityTrace, aGroup.Name());
+    LOG(kSeverityTrace, "\n");
 
     CpTopology2Job* job = iFree.Read();
     job->Set(aGroup, &ICpTopology2Handler::GroupAdded);
@@ -643,11 +643,11 @@ void CpTopology2::GroupSourceIndexChanged(CpTopology2Group& aGroup)
 
 void CpTopology2::GroupSourceListChanged(CpTopology2Group& aGroup)
 {
-    LOG(kTrace, "CpTopology2::GroupSourceListChanged ");
-    LOG(kTrace, aGroup.Room());
-    LOG(kTrace, ":");
-    LOG(kTrace, aGroup.Name());
-    LOG(kTrace, "\n");
+    LOG(kSeverityTrace, "CpTopology2::GroupSourceListChanged ");
+    LOG(kSeverityTrace, aGroup.Room());
+    LOG(kSeverityTrace, ":");
+    LOG(kSeverityTrace, aGroup.Name());
+    LOG(kSeverityTrace, "\n");
 
     CpTopology2Job* job = iFree.Read();
     job->Set(aGroup, &ICpTopology2Handler::GroupSourceListChanged);
@@ -656,11 +656,11 @@ void CpTopology2::GroupSourceListChanged(CpTopology2Group& aGroup)
 
 void CpTopology2::GroupRemoved(CpTopology2Group& aGroup)
 {
-    LOG(kTrace, "CpTopology2::GroupRemoved ");
-    LOG(kTrace, aGroup.Room());
-    LOG(kTrace, ":");
-    LOG(kTrace, aGroup.Name());
-    LOG(kTrace, "\n");
+    LOG(kSeverityTrace, "CpTopology2::GroupRemoved ");
+    LOG(kSeverityTrace, aGroup.Room());
+    LOG(kSeverityTrace, ":");
+    LOG(kSeverityTrace, aGroup.Name());
+    LOG(kSeverityTrace, "\n");
 
     CpTopology2Job* job = iFree.Read();
     job->Set(aGroup, &ICpTopology2Handler::GroupRemoved);

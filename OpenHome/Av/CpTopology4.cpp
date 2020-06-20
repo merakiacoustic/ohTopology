@@ -1020,9 +1020,9 @@ void CpTopology4::GroupVolumeLimitChanged(CpTopology3Group& aGroup)
     
 void CpTopology4::RoomAdded(CpTopology4Room& aRoom)
 {
-    LOG(kTrace, "CpTopology4::RoomAdded ");
-    LOG(kTrace, aRoom.Name());
-    LOG(kTrace, "\n");
+    LOG(kSeverityTrace, "CpTopology4::RoomAdded ");
+    LOG(kSeverityTrace, aRoom.Name());
+    LOG(kSeverityTrace, "\n");
 
     iRoomList.push_back(&aRoom);
         
@@ -1031,18 +1031,18 @@ void CpTopology4::RoomAdded(CpTopology4Room& aRoom)
 
 void CpTopology4::RoomChanged(CpTopology4Room& aRoom)
 {
-    LOG(kTrace, "CpTopology4::RoomChanged ");
-    LOG(kTrace, aRoom.Name());
-    LOG(kTrace, "\n");
+    LOG(kSeverityTrace, "CpTopology4::RoomChanged ");
+    LOG(kSeverityTrace, aRoom.Name());
+    LOG(kSeverityTrace, "\n");
 
     iHandler.RoomChanged(aRoom);
 }
 
 void CpTopology4::RoomRemoved(CpTopology4Room& aRoom)
 {
-    LOG(kTrace, "CpTopology4::RoomRemoved ");
-    LOG(kTrace, aRoom.Name());
-    LOG(kTrace, "\n");
+    LOG(kSeverityTrace, "CpTopology4::RoomRemoved ");
+    LOG(kSeverityTrace, aRoom.Name());
+    LOG(kSeverityTrace, "\n");
 
     std::list<CpTopology4Room*>::iterator it = iRoomList.begin();
     
